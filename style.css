@@ -43,7 +43,7 @@
   --size-900:5rem;
 }
 
-@media (min-width:50em){
+@media (min-width:60em){
   :root{
    --fs-primary-heading:var(--fs-900);
    --fs-secondary-heading:var(--fs-800);
@@ -137,7 +137,7 @@ svg {
   gap: 1rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 60em) {
   .even-columns{
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -206,12 +206,31 @@ body{
 
 }
 
-@media (max-width: 50em){
+.nav-list{
+  display: flex;
+  gap: clamp(var(--size-500), 4vw, var(--size-800));
+  font-weight: var(--fw-semi-bold);
+}
+
+.nav-list a{
+  color: var(--clr-primary-400);
+  text-decoration: none;
+  
+}
+.nav-list a:hover,
+.nav-list a:focus{
+  color: var(--clr-accent-400);
+
+}
+
+@media (max-width: 60em){
   .primary-navigation{
     display: none;
     position: fixed;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
+    /* max-width: 25rem; */
+    margin-inline: auto;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
     box-shadow: 0 0 .75em rgb(0, 0, 0, 0.05);
@@ -233,17 +252,7 @@ body{
 
   }
 
-  .nav-list a{
-    color: var(--clr-primary-400);
-    text-decoration: none;
-    
-  }
-  .nav-list a:hover,
-  .nav-list a:focus{
-    color: var(--clr-accent-400);
-    
-    
-  }
+  
 .primary-navigation[data-visible]{
   display: block;
 }
@@ -345,7 +354,7 @@ border: 0 !important;
 .display-sm-none{
   display: none;
 }
-@media (min-width: 50em){
+@media (min-width: 60em){
   .display-md-inline-flex{
     display: inline-flex;
 
