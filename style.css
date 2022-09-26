@@ -269,6 +269,34 @@ p[data-width="wide"]{
   position: fixed;
 } */
 
+/* CTA */
+.cta{
+  position: relative;
+  isolation: isolate; /* which prevents the stacking order to escape from the layout*/
+  text-align: left;
+}
+
+@media (max-width:60em){
+  .cta{
+    text-align:center;
+  }
+  
+}
+
+.cta::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+  url('./images/bg-tablet-pattern.svg'),
+  url('./images/bg-tablet-pattern.svg');
+  background-position: -15rem -5rem, 80rem -30rem;
+  background-repeat: no-repeat;
+  opacity: .1;
+  z-index: -1;
+}
+
+
 /* Utility Classes */
 
 .visually-hidden {
@@ -291,24 +319,37 @@ border: 0 !important;
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto; /* centering*/
 }
+.even-columns{
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 60em) {
+  .even-columns{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    
+  }
+  
+  
+}
+
+.vertical-align-center{
+  align-items: center;
+}
+.justify-self-end{  /*works only in grid*/
+  margin-left: auto;
+}
+@media (max-width:60em){
+  .justify-self-end{
+    margin: auto;
+  }
+  
+}
 
 :where(.flow :not(:first-child)){ /* IT SKIPS THE FIRST CHILD ELEMENT, WHERE SUDO SELECTOR IS USED FOR SPECFICITY*/
   margin-top: var(--flow-spacer, 3em);
 }
 
-
-.even-columns{
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 60em) {
-  .even-columns{
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-  
-}
 
 .text-primary-400{
   color: var(--clr-primary-400);
