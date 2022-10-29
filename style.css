@@ -264,6 +264,19 @@ p[data-width="wide"]{
   }
 }
 
+/* Footer Navigation */
+
+.footer-nav a{
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+.footer-nav a:where(:hover, :focus){
+  color: var(--clr-accent-400);
+  
+}
+
+
 /* .opened{
   display: block;
   position: fixed;
