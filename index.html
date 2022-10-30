@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <header class="primary-header">
-      <div class="container">
-        <div class="nav-wrapper">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
         <a href="#"><img src="./images/logo.svg" alt="Manage"></a>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
           <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
@@ -21,7 +23,7 @@
           <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation" id="primary-navigation">
-          <ul aria-label ="Primary" role="list" class="nav-list" >
+          <ul aria-label="Primary" role="list" class="nav-list">
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Product</a></li>
             <li><a href="#">About Us</a></li>
@@ -31,121 +33,153 @@
         </nav>
         <button class="button | display-sm-none display-md-inline-flex">Get Started</button>
       </div>
-      </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="padding-block-700 padding-block-900">
-        <div class="container">
-          <div class="even-columns">
-            <div class="flow">
-              <h1 class="fs-primary-heading fw-bold">Bring everyone together to
-                build better products.
-              </h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam repellat totam ipsam inventore eius assumenda veritatis modi voluptatem aut?</p>
-              <button class="button">Get Started</button>
-            </div>
-            <div>
-              <img src="./images/illustration-intro.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="padding-block-700 padding-block-900">
-        <div class="container">
-          <div class="even-columns">
-            <div class="flow">
-              <h2 class="fs-secondary-heading fw-bold">What's different about Manage?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloremque dolore aperiam, laudantium nam tenetur eos at aspernatur totam maiores.</p>
-
-            </div>
-            <div>
-              <ul class="numbered-items | flow" role="list">
-                <li>
-                  <div class="flow" style="--flow-spacer:1em">
-                  <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
-                <p data-width="wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, harum! Sunt consequuntur eius adipisci tenetur. Deleniti voluptatibus culpa vitae explicabo?</p>
-              </div>
-              </li>
-               
-                <li>
-                  <div class="flow" style="--flow-spacer:1em">
-                  <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
-                <p data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae ab sequi molestiae nobis minima perferendis incidunt saepe odio dicta!</p>
-              </div>
-              </li>
-                
-                <li>
-                  <div class="flow" style="--flow-spacer:1em">
-                  <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
-                <p data-width="wide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab temporibus deserunt perspiciatis earum voluptas sed in quis minus ducimus et.</p>
-              </div>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="carousel | padding-block-700">
-        <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
-        <!-- carousel -->
-        <button class="button">Get Started</button>
-      </section>
-
-      <!-- | is used to visually idenitify the diffrent classes like untility and main -->
-      <section class=" cta | bg-accent-400 text-neutral-900 padding-block-900">
-        <div class="container">
-          <div class="even-columns vertical-align-center">
-            <p class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet ipsum do.</p>
-            <div class="justify-self-end">
-              <button class="button" data-type="inverted">Get Started</button>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="bg-neutral-100 text-neutral-900 padding-block-700">
+  <main>
+    <section class="padding-block-700 padding-block-900">
       <div class="container">
         <div class="even-columns">
-          <div>
-            <a href="#"><img src="./images/logo.svg" alt="Manage"></a>
-            <ul role="list" aria-label="social links">
-              <li><a aria-label="facebook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a aria-label="twitter" href="#"></a></li>
-              <li><a aria-label="pinrest" href="#"></a></li>
-              <li><a aria-label="instagram" href="#"></a></li>
-            </ul>
+          <div class="flow">
+            <h1 class="fs-primary-heading fw-bold">Bring everyone together to
+              build better products.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam repellat totam ipsam
+              inventore eius assumenda veritatis modi voluptatem aut?</p>
+            <button class="button">Get Started</button>
           </div>
           <div>
-            <nav class="footer-nav" >
-              <ul class="flow" style="--flow-spacer:1em" role="list" aria-label="Footer">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div>
-            <form action="">
-              <input type="email"><button class="button">Go</button>
-              <p>Copyright 2022. All Rights Reserverd</p>
-            </form>
+            <img src="./images/illustration-intro.svg" alt="">
           </div>
         </div>
       </div>
+    </section>
 
-    </footer>
+    <section class="padding-block-700 padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+          <div class="flow">
+            <h2 class="fs-secondary-heading fw-bold">What's different about Manage?</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloremque dolore aperiam,
+              laudantium nam tenetur eos at aspernatur totam maiores.</p>
 
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+          </div>
+          <div>
+            <ul class="numbered-items | flow" role="list">
+              <li>
+                <div class="flow" style="--flow-spacer:1em">
+                  <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
+                  <p data-width="wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, harum!
+                    Sunt consequuntur eius adipisci tenetur. Deleniti voluptatibus culpa vitae explicabo?</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="flow" style="--flow-spacer:1em">
+                  <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
+                  <p data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae ab sequi
+                    molestiae nobis minima perferendis incidunt saepe odio dicta!</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="flow" style="--flow-spacer:1em">
+                  <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
+                  <p data-width="wide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab temporibus deserunt
+                    perspiciatis earum voluptas sed in quis minus ducimus et.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel | padding-block-700">
+      <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
+      <!-- carousel -->
+      <button class="button">Get Started</button>
+    </section>
+
+    <!-- | is used to visually idenitify the diffrent classes like untility and main -->
+    <section class=" cta | bg-accent-400 text-neutral-900 padding-block-900">
+      <div class="container">
+        <div class="even-columns vertical-align-center">
+          <p class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet ipsum do.</p>
+          <div class="justify-self-end">
+            <button class="button" data-type="inverted">Get Started</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-neutral-100 text-neutral-900 padding-block-700">
+    <div class="container">
+      <div class="even-columns">
+        <div>
+          <a href="#"><img src="./images/logo.svg" alt="Manage"></a>
+          <ul class="social-list" role="list" aria-label="social links">
+            <li><a aria-label="facebook" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./images/social-icons.svg#icon-facebook"></use>
+                  <!--By Useing svg Sprite-->
+                </svg>
+              </a>
+            </li>
+            <li><a aria-label="youtube" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./images/social-icons.svg#icon-youtube"></use>
+                  <!--By Useing svg Sprite-->
+                </svg>
+              </a></li>
+            <li><a aria-label="twitter" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./images/social-icons.svg#icon-twitter"></use>
+                  <!--By Useing svg Sprite-->
+                </svg>
+              </a></li>
+            <li><a aria-label="pinrest" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./images/social-icons.svg#icon-pinterest"></use>
+                  <!--By Useing svg Sprite-->
+                </svg>
+              </a></li>
+            <li><a aria-label="instagram" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./images/social-icons.svg#icon-instagram"></use>
+                  <!--By Useing svg Sprite-->
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+        <div>
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer:1em" role="list" aria-label="Footer">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <form action="">
+            <input type="email"><button class="button">Go</button>
+            <p>Copyright 2022. All Rights Reserverd</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
